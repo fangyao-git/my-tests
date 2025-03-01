@@ -16,3 +16,4 @@ jobs:
     - name: Run script
       run: |
         echo "Hello, World!"
+        echo "Hello, World!"
