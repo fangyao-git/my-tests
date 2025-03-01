@@ -1,0 +1,18 @@
+name: CI Pipeline
+on:
+  push:
+    branches:
+      - main
+      - 'test-*'        # Temporary test build
+
+jobs:
+  build:
+  runs-on:
+    - self-hosted
+    - Yuan
+  steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    - name: Run script
+      run: |
+        echo "Hello, World!"
